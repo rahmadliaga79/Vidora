@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.btn {
+  background: #22c55e;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero p {
+  opacity: 0.7;
+}
+
+.main-btn {
+  margin-top: 20px;
+  padding: 15px 25px;
+  background: #22c55e;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.editor {
+  text-align: center;
+  margin-top: 100px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+canvas {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 80px;
+  opacity: 0.5;
+    }
