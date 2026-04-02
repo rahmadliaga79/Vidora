@@ -4,37 +4,51 @@
   <meta charset="UTF-8">
   <title>Vidora</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav>
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
     <h2>VIDORA</h2>
-    <button class="btn">Start Creating</button>
-  </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Create Aesthetic Videos in Seconds</h1>
-    <p>Turn your photos into cinematic videos with music & text</p>
+    <label>Upload Gambar</label>
+    <input type="file" id="images" multiple>
 
-    <button class="main-btn" onclick="scrollToEditor()">Create Now</button>
-  </section>
+    <label>Teks per Scene</label>
+    <textarea id="texts" placeholder="1 baris = 1 scene"></textarea>
 
-  <!-- EDITOR -->
-  <section class="editor" id="editor">
-    <h2>🎬 Video Editor</h2>
+    <label>Filter</label>
+    <select id="filter">
+      <option value="none">Normal</option>
+      <option value="brightness(0.8) contrast(1.3)">Cinematic</option>
+      <option value="grayscale(1)">B&W</option>
+      <option value="sepia(1)">Vintage</option>
+    </select>
 
-    <input type="file" id="images" multiple accept="image/*"><br><br>
-    <input type="text" id="text" placeholder="Masukkan teks..."><br><br>
-    <input type="file" id="music" accept="audio/*"><br><br>
+    <label>Musik</label>
+    <input type="file" id="music">
 
-    <button onclick="startRender()">Render Video</button>
+    <button onclick="startRender()">🎬 Render</button>
 
-    <canvas id="canvas" width="400" height="400"></canvas>
-  </section>
+    <div id="progress">Idle...</div>
+  </div>
 
+  <!-- MAIN -->
+  <div class="main">
+    <canvas id="canvas" width="500" height="500"></canvas>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Vidora — by Rahmad Liaga
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
   <!-- FOOTER -->
   <footer>
     © 2026 Vidora — by Rahmad Liaga
