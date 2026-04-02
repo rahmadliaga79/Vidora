@@ -133,3 +133,24 @@ textarea {
 canvas {
   border-radius: 10px;
 }
+/* MOBILE MODE */
+@media (max-width: 768px) {
+
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+
+  }
