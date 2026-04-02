@@ -64,3 +64,33 @@ footer {
   margin-top: 80px;
   opacity: 0.5;
     }
+.app {
+  display: flex;
+  height: 90vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #020617;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.preview {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea {
+  height: 80px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+canvas {
+  border-radius: 10px;
+}
