@@ -1,40 +1,79 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #0f172a, #020617);
+  font-family: Arial;
+  background: #0f172a;
   color: white;
 }
 
-nav {
+/* LAYOUT */
+.app {
   display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
+  height: 92vh;
 }
 
-.btn {
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  background: #1e293b;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+/* INPUT */
+input, textarea, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* BUTTON */
+button {
   background: #22c55e;
   border: none;
-  padding: 10px 15px;
-  border-radius: 8px;
+  padding: 12px;
+  border-radius: 10px;
   color: white;
   cursor: pointer;
+  transition: 0.2s;
 }
 
-.hero {
+button:hover {
+  transform: scale(1.05);
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CANVAS */
+canvas {
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* FOOTER */
+footer {
   text-align: center;
-  margin-top: 100px;
+  opacity: 0.5;
+  padding: 10px;
 }
 
-.hero h1 {
-  font-size: 40px;
-}
-
-.hero p {
+/* PROGRESS */
+#progress {
+  margin-top: 10px;
+  font-size: 14px;
   opacity: 0.7;
-}
-
-.main-btn {
-  margin-top: 20px;
+}  margin-top: 20px;
   padding: 15px 25px;
   background: #22c55e;
   border: none;
