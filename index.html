@@ -41,5 +41,37 @@
   </footer>
 
   <script src="script.js"></script>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h2>VIDORA</h2>
+
+    <label>Upload Gambar</label>
+    <input type="file" id="images" multiple accept="image/*">
+
+    <label>Teks per Scene</label>
+    <textarea id="texts" placeholder="Pisahkan dengan ENTER"></textarea>
+
+    <label>Musik</label>
+    <input type="file" id="music" accept="audio/*">
+
+    <button onclick="startRender()">Render</button>
+  </div>
+
+  <!-- PREVIEW -->
+  <div class="preview">
+    <canvas id="canvas" width="400" height="400"></canvas>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Vidora — by Rahmad Liaga
+</footer>
+
+<script src="script.js"></script>
 </body>
   </html>
