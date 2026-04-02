@@ -171,3 +171,10 @@ async function startRender() {
     audio.play();
   }
 }
+function resizeCanvas(canvas) {
+  const maxWidth = window.innerWidth * 0.9;
+  const size = Math.min(maxWidth, 500);
+
+  canvas.width = size;
+  canvas.height = size;
+}
