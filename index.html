@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Vidora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h2>VIDORA</h2>
+    <button class="btn">Start Creating</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Create Aesthetic Videos in Seconds</h1>
+    <p>Turn your photos into cinematic videos with music & text</p>
+
+    <button class="main-btn" onclick="scrollToEditor()">Create Now</button>
+  </section>
+
+  <!-- EDITOR -->
+  <section class="editor" id="editor">
+    <h2>🎬 Video Editor</h2>
+
+    <input type="file" id="images" multiple accept="image/*"><br><br>
+    <input type="text" id="text" placeholder="Masukkan teks..."><br><br>
+    <input type="file" id="music" accept="audio/*"><br><br>
+
+    <button onclick="startRender()">Render Video</button>
+
+    <canvas id="canvas" width="400" height="400"></canvas>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Vidora — by Rahmad Liaga
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
